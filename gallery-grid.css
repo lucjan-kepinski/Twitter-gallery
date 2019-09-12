@@ -60,6 +60,10 @@ body {
     max-height: 11.5em
 }
 
+.twitter{
+    width: 30px;
+    height: 30px
+}
 
 @media(max-width: 768px) {
     body {
