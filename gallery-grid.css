@@ -34,6 +34,7 @@ body {
 }
 
 .tz-gallery .lightbox img {
+    height: 80%;
     width: 100%;
     margin-bottom: 30px;
     transition: 0.2s ease-in-out;
@@ -56,11 +57,9 @@ body {
 
 .novels{
     height: 100%;
-    max-height: 16em
 }
 
-.video-novels{
-    max-height: 11.5em;
+.video-novels, .video-volunteer{
     width: 100%
 }
 
@@ -74,6 +73,14 @@ body {
  height: 23vh
 }
 
+.card{ 
+    height: 330px;
+}
+
+.lightbox{
+    height: 330px
+}
+
 @media(max-width: 768px) {
     body {
         padding: 0;
@@ -84,20 +91,52 @@ body {
     }
 }
 
-@media(max-width: 1199px){
-    .soldier{
-        height: 18.9vh
-    }
-}
-
 @media(max-width: 991px){
     .soldier{
         height: 13vh
     }
 }
 
-@media(max-width: 767px){    
+@media(min-width: 991px) and (max-width: 1199px){
+.soldier{
+    height: 18.9vh
+}
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .tz-gallery .lightbox img {
+        height: 80%;
+    }
+    .card{
+        height: 180px
+    }
+    .lightbox{
+        height: 180px;
+    }}
+}
+
+@media(max-width: 321px){    
+.tz-gallery .lightbox img {
+    height: 70%;
+}
+.card{
+    height: 200px
+}
+.lightbox{
+    height: 200px;
+}}
+
+@media(min-width: 322px) and (max-width: 767px){    
     .soldier{
     height: 100%;
 }
+.tz-gallery .lightbox img {
+    height: 70%;
+}
+}
+
+@media(min-width: 435px) and (max-width: 767px){
+    .novels{
+        height: 100%
+    }
 }
