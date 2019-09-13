@@ -53,17 +53,25 @@ body {
 .baguetteBox-button {
     background-color: transparent !important;
 }
+
 .novels{
-    max-height: 14em
+    height: 100%;
+    max-height: 16em
 }
 
 .video-novels{
-    max-height: 11.5em
+    max-height: 11.5em;
+    width: 100%
 }
 
 .twitter{
     width: 30px;
     height: 30px
+}
+
+.soldier{
+ width: 300px;
+ height: 23vh
 }
 
 @media(max-width: 768px) {
@@ -74,4 +82,22 @@ body {
     .container.gallery-container {
         border-radius: 0;
     }
+}
+
+@media(max-width: 1199px){
+    .soldier{
+        height: 18.9vh
+    }
+}
+
+@media(max-width: 991px){
+    .soldier{
+        height: 13vh
+    }
+}
+
+@media(max-width: 767px){    
+    .soldier{
+    height: 100%;
+}
 }
