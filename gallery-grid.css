@@ -19,6 +19,9 @@ body {
     text-align: center;
     font-family: 'Droid Sans', sans-serif;
     font-weight: bold;
+    background: -webkit-linear-gradient(white, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .gallery-container p.page-description {
@@ -77,6 +80,11 @@ body {
 
 .card{ 
     height: 330px;
+    border: 5px solid red;
+    border-style: outset;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
 }
 
 .lightbox{
@@ -159,6 +167,8 @@ font-size: 80%
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
         background-size: 400% 400%;
         animation: gradientBG 15s ease infinite;
+        border: 5px solid red;
+        border-style: outset
     }
     
     @keyframes gradientBG {
