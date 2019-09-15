@@ -1,10 +1,9 @@
 body {
-    background-image: url("https://media.istockphoto.com/videos/poland-flag-video-waving-in-wind-realistic-polish-flag-background-video-id1062406224?s=640x640");
+    background-image: url("https://wallpapercave.com/wp/wp2175438.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-height: 100vh;
     font: normal 16px sans-serif;
-    padding: 10px 0;
 }
 
 .container.gallery-container {
@@ -222,5 +221,9 @@ a:hover {
 @media(min-width: 1199px){
     .mb-3{
         max-height: 17em
+    }
+    .lightbox{
+        height: 20em;
+        max-height: 220px
     }
 }
