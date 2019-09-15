@@ -22,6 +22,7 @@ body {
     background: -webkit-linear-gradient(white, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 0.5%
 }
 
 .gallery-container p.page-description {
@@ -38,7 +39,7 @@ body {
 }
 
 .tz-gallery .lightbox img {
-    height: 80%;
+    height: 100%;
     width: 100%;
     margin-bottom: 30px;
     transition: 0.2s ease-in-out;
@@ -59,13 +60,9 @@ body {
     background-color: transparent !important;
 }
 
-.novels{
-    height: 100%;
-}
-
 .video-novels, .video-volunteer{
     width: 100%;
-    height: 27.5vh
+    height: 100%
 }
 
 .twitter{
@@ -75,12 +72,16 @@ body {
 
 .soldier{
  width: 300px;
- height: 23vh
+ height: 23vh;
+}
+
+.gallery-tweet{
+    object-fit: cover
 }
 
 .card{ 
-    height: 330px;
-    border: 5px solid red;
+    height: 270px;
+    width: 350px;
     border-style: outset;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -102,62 +103,58 @@ body {
 }
 
 @media(max-width: 321px){    
-.tz-gallery .lightbox img {
-    height: 70%;
-}
 .card{
-    height: 200px
-}
-.lightbox{
-    height: 200px;
-}
-.video-novels, .video-volunteer{
-    height: 14vh
-}
-.gallery-container p.page-description {
-font-size: 80%
+    height: 80%;
+    width: 100%
 }
 .h1, h1{
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    margin-top: 5%
 }
 }
 
 @media(min-width: 322px) and (max-width: 767px){    
     .soldier{
     height: 100%;
-}
-.tz-gallery .lightbox img {
-    height: 70%;
-}
-}
-
-@media(min-width: 435px) and (max-width: 767px){
-    .novels{
-        height: 100%
+    }
+    .card{ 
+        height: 270px;
+        width: 100%;
+    }
+    .lightbox{
+        width: 100%
+    }
+    .tz-gallery{
+        padding: 0px 30px
+    }
+    .gallery-container h1{
+        font-size: 25px
+    }
+    .col-md-4{
+        margin: 2% 2%
     }
 }
 
 @media(min-width: 768px) and (max-width: 991px){
-    .tz-gallery .lightbox img {
-        height: 80%;
-    }
     .card{
-        height: 180px
-    }
-    .lightbox{
-        height: 180px;
+        height: 40%;
+        width: 100%
     }
     .soldier{
         height: 13vh
     }
-    .video-novels, .video-volunteer{
-        height: 15vh
+    .mb-3{
+        max-height: 10em
     }
 }
 
 @media(min-width: 991px) and (max-width: 1199px){
-    .soldier{
-        height: 18.9vh
+    .card{
+        height: 60%;
+        width: 100%
+    }
+    .mb-3{
+        max-height: 13em
     }
     }
 
