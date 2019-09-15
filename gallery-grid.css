@@ -79,27 +79,66 @@ body {
     object-fit: cover
 }
 
+.lightbox{
+    height: 330px
+}
+
+.gallery-container {
+    font-family: "Exo", sans-serif;
+    color: #fff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    border: 5px solid red;
+    border-style: outset
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .card{ 
-    height: 270px;
-    width: 350px;
+    height: 80%;
+    width: 100%;
     border-style: outset;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
 }
-
-.lightbox{
-    height: 330px
+    
+.container-background {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
 }
 
-@media(max-width: 768px) {
-    body {
-        padding: 0;
-    }
+h1 {
+    font-weight: 300;
+}
 
-    .container.gallery-container {
-        border-radius: 0;
-    }
+h3 {
+    color: #eee;
+    font-weight: 100;
+}
+
+h5 {
+    color:#eee;
+    font-weight:300;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #ddd;
 }
 
 @media(max-width: 321px){    
@@ -113,7 +152,14 @@ body {
 }
 }
 
-@media(min-width: 322px) and (max-width: 767px){    
+@media(min-width: 322px) and (max-width: 767px){
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
     .soldier{
     height: 100%;
     }
@@ -135,7 +181,7 @@ body {
     }
 }
 
-@media(min-width: 768px) and (max-width: 991px){
+@media(min-width: 768px) and (max-width: 992px){
     .card{
         height: 40%;
         width: 100%
@@ -148,7 +194,7 @@ body {
     }
 }
 
-@media(min-width: 991px) and (max-width: 1199px){
+@media(min-width: 992px) and (max-width: 1199px){
     .card{
         height: 60%;
         width: 100%
@@ -158,51 +204,8 @@ body {
     }
     }
 
-   .gallery-container {
-        font-family: "Exo", sans-serif;
-        color: #fff;
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 400% 400%;
-        animation: gradientBG 15s ease infinite;
-        border: 5px solid red;
-        border-style: outset
+@media(min-width: 1199px){
+    .mb-3{
+        max-height: 17em
     }
-    
-    @keyframes gradientBG {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-    
-    .container-background {
-        width: 100%;
-        position: absolute;
-        top: 35%;
-        text-align: center;
-    }
-    
-    h1 {
-        font-weight: 300;
-    }
-    
-    h3 {
-        color: #eee;
-        font-weight: 100;
-    }
-    
-    h5 {
-        color:#eee;
-        font-weight:300;
-    }
-    
-    a,
-    a:hover {
-        text-decoration: none;
-        color: #ddd;
-    }
+}
